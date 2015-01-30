@@ -1,0 +1,25 @@
+Upstream sources: https://git.centos.org/summary/rpms!qemu-kvm
+
+ksmtuned:
+  Copyright 2009 Red Hat, Inc. and/or its affiliates.
+  Released under the GPL
+  Author:      Dan Kenigsberg <danken@redhat.com>
+
+ksmctl.c:
+  Start/stop KSM, for systemd.
+  Copyright (C) 2009, 2011 Red Hat, Inc.
+  Written by Paolo Bonzini <pbonzini@redhat.com>.
+  Based on the original sysvinit script by Dan Kenigsberg <danken@redhat.com>
+  This file is distributed under the GNU General Public License, version 2
+  or later.
+
+
+debian/*:
+  Copyright (C) 2015 Bernd Zeimetz <bzed@debian.org>
+  License: GPLv2 or later
+
+On Debian systems, the full text of the GPL license can be found in
+/usr/share/common-licenses/GPL.
+
+
+

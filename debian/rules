@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with systemd
+
+ksmctl: ksmctl.c
+	gcc $< -O2 -g -o $@
+
+build:  ksmctl
+	dh $@ --with systemd
+

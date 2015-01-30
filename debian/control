@@ -1,0 +1,19 @@
+Source: ksmtuned
+Section: otherosfs
+Priority: optional
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Build-Depends: debhelper (>= 9), dh-systemd
+Standards-Version: 3.9.5
+Homepage: https://git.centos.org/summary/rpms!qemu-kvm
+Vcs-Browser: https://github.com/bzed/debian-ksmtuned
+Vcs-Git: https://github.com/bzed/debian-ksmtuned.git
+
+Package: ksmtuned
+Architecture: amd64 arm arm64 armel armhf hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 ppc64el s390x sparc sparc64 x32
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: qemu-kvm
+Description: control Kernel Samepage Merging
+ This package ships ksmtuned and ksmctl to control the KVM
+ Kernel Samepage Merging. KSM is a memory-saving de-duplication
+ feature, that merges anonymous (private) pages (not pagecache ones).
