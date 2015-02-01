@@ -9,7 +9,7 @@ Vcs-Browser: https://github.com/bzed/debian-ksmtuned
 Vcs-Git: https://github.com/bzed/debian-ksmtuned.git
 
 Package: ksmtuned
-Architecture: amd64 arm arm64 armel armhf hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 ppc64el s390x sparc sparc64 x32
+Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: qemu-kvm
