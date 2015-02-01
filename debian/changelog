@@ -1,3 +1,11 @@
+ksmtuned (2.20150201) unstable; urgency=medium
+
+  * [5b967237] Fix ksmtuned for debian
+  * [1dfd1f80] Use architecture: any.
+    ksmctl is not limited to KVM.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sun, 01 Feb 2015 13:12:48 +0100
+
 ksmtuned (1.20150131) unstable; urgency=medium
 
   * Initial release.
