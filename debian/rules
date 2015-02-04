@@ -1,10 +1,14 @@
 #!/usr/bin/make -f
 
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
+
 %:
 	dh $@ --with systemd
 
 ksmctl: ksmctl.c
-	gcc $< -O2 -g -o $@
+	gcc $< -O2 -g $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
 
 build:  ksmctl
 	dh $@ --with systemd
