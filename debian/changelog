@@ -1,3 +1,11 @@
+ksmtuned (3.20150205) unstable; urgency=medium
+
+  * Uploading to Debian (Closes: #776681)
+  * [54df18ef] Better Section and Description.
+  * [97dda18a] Use hardening build flags.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Thu, 05 Feb 2015 00:02:47 +0100
+
 ksmtuned (2.20150201) unstable; urgency=medium
 
   * [5b967237] Fix ksmtuned for debian
