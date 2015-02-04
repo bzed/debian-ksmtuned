@@ -1,9 +1,9 @@
 Source: ksmtuned
-Section: otherosfs
+Section: kernel
 Priority: optional
 Maintainer: Bernd Zeimetz <bzed@debian.org>
 Build-Depends: debhelper (>= 9), dh-systemd
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://git.centos.org/summary/rpms!qemu-kvm
 Vcs-Browser: https://github.com/bzed/debian-ksmtuned
 Vcs-Git: https://github.com/bzed/debian-ksmtuned.git
@@ -13,7 +13,11 @@ Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: qemu-kvm
-Description: control Kernel Samepage Merging
- This package ships ksmtuned and ksmctl to control the KVM
+Description: enables and tunes Kernel Samepage Merging
+ This package ships the ksm and ksmtuned services to control
  Kernel Samepage Merging. KSM is a memory-saving de-duplication
  feature, that merges anonymous (private) pages (not pagecache ones).
+ .
+ While the ksm service is only able to start and stop the KSM kernel
+ thread, ksmtuned controls and tunes KSM according to the used memory
+ of running qemu KVM instances.
