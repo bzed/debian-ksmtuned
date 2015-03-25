@@ -10,6 +10,12 @@ LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
 ksmctl: ksmctl.c
 	gcc $< -O2 -g $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
 
-build:  ksmctl
+build-arch:  ksmctl
 	dh $@ --with systemd
+
+build: build-arch build-indep
+
+binary: binary-arch binary-indep
+
+binary-arch: install
 
