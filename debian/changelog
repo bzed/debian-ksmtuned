@@ -1,3 +1,11 @@
+ksmtuned (4.20150325) unstable; urgency=medium
+
+  * [176bc5ab] Merge branch 'master' of github.com:bzed/debian-ksmtuned
+  * [84945d0d] Let build-arch depend on ksmctl.
+    Thanks to Aaron M. Ucko (Closes: #781144)
+
+ -- Bernd Zeimetz <bzed@debian.org>  Wed, 25 Mar 2015 21:22:32 +0100
+
 ksmtuned (3.20150205) unstable; urgency=medium
 
   * Uploading to Debian (Closes: #776681)
