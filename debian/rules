@@ -18,4 +18,3 @@ build: build-arch build-indep
 binary: binary-arch binary-indep
 
 binary-arch: install
-
