@@ -1,3 +1,9 @@
+ksmtuned (4.20150326) UNRELEASED; urgency=medium
+
+  * Trim trailing whitespace.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sat, 12 Oct 2019 04:04:08 +0000
+
 ksmtuned (4.20150325) unstable; urgency=medium
 
   * [176bc5ab] Merge branch 'master' of github.com:bzed/debian-ksmtuned
