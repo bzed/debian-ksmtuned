@@ -1,6 +1,7 @@
 ksmtuned (4.20150326) UNRELEASED; urgency=medium
 
   * Trim trailing whitespace.
+  * Depend on newer debhelper (>= 9.20160709) rather than dh-systemd.
 
  -- Debian Janitor <janitor@jelmer.uk>  Sat, 12 Oct 2019 04:04:08 +0000
 
