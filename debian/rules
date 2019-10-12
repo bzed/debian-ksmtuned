@@ -5,13 +5,13 @@ CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
 LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
 
 %:
-	dh $@ --with systemd
+	dh $@
 
 ksmctl: ksmctl.c
 	gcc $< -O2 -g $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
 
 build-arch:  ksmctl
-	dh $@ --with systemd
+	dh $@
 
 build: build-arch build-indep
 
