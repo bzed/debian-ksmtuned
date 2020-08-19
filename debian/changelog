@@ -1,11 +1,13 @@
-ksmtuned (4.20150326) UNRELEASED; urgency=medium
+ksmtuned (4.20150326) unstable; urgency=medium
 
+  [ Debian Janitor ]
   * Trim trailing whitespace.
   * Depend on newer debhelper (>= 9.20160709) rather than dh-systemd.
+    Closes: #958589
   * Explicitly specify source format.
   * Bump debhelper from old 9 to 12.
 
- -- Debian Janitor <janitor@jelmer.uk>  Sat, 12 Oct 2019 04:04:08 +0000
+ -- Bernd Zeimetz <bzed@debian.org>  Wed, 19 Aug 2020 18:40:38 +0200
 
 ksmtuned (4.20150325) unstable; urgency=medium
 
